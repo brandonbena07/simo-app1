@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'injection_container.dart' as di;
-import 'package:simo_app/ui/screens/Opciones/opciones_screen.dart';
+import 'ui/screens/Opciones/opciones_screen.dart';
+import 'ui/screens/Opciones/busqueda_screen.dart';
+import 'ui/screens/canjear/canjear_principal.dart';
+import 'ui/screens/canjear/canjear_exito.dart';
+import 'ui/screens/usuario/usuario_menu.dart';
+import 'ui/screens/usuario/editar_usuario.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,7 +27,15 @@ class SimoApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFFD8006B)),
         useMaterial3: true,
       ),
-      home: const OpcionesScreen(),
+      routes: {
+        '/opciones': (context) => OpcionesScreen(),
+        '/busqueda': (context) => BusquedaScreen(),
+        '/canjear': (context) => CanjearPrincipal(),
+        '/canjear/exito': (context) => CanjearExitoScreen(),
+        '/usuario': (context) => UsuarioMenuScreen(),
+        '/editar_usuario': (context) => EditarUsuarioScreen(),
+      },
+      home: OpcionesScreen(),
     );
   }
 }

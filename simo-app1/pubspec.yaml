@@ -40,4 +40,6 @@ flutter:
     - assets/imagenes/opciones/
     - assets/imagenes/canjear/
     - assets/imagenes/busqueda/
+    - assets/imagenes/usuario/
+    - assets/imagenes/usuario/editar_usuario/
 
