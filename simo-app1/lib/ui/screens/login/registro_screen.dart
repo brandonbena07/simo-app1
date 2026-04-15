@@ -1,3 +1,4 @@
+import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -109,35 +110,49 @@ class _RegistroScreenState extends ConsumerState<RegistroScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  const SizedBox(width: 60),
-                  const SizedBox(width: 8),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
+              SizedBox(
+                height: 200,
+                child: Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    Positioned(
+                      left: -50,
+                      top: 90,
+                      child: Transform.rotate(
+                        angle: math.pi / 2,
+                        child: Image.asset(
+                          'assets/images/robot.png',
+                          height: 130,
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 15,
+                      top: -10,
+                      child: Text(
                         'Únete a',
                         style: GoogleFonts.outfit(
-                          fontSize: 28,
-                          fontWeight: FontWeight.w500,
+                          fontSize: 80,
+                          fontWeight: FontWeight.w400,
                           color: const Color(0xFFdb007f),
                         ),
                       ),
-                      Text(
+                    ),
+                    Positioned(
+                      left: 100,
+                      top: 90,
+                      child: Text(
                         'SIMÖ',
-                        style: GoogleFonts.poppins(
-                          fontSize: 68,
+                        style: GoogleFonts.outfit(
+                          fontSize: 100,
                           fontWeight: FontWeight.w900,
                           color: const Color(0xFFdb007f),
-                          height: 1.0,
+                          height: 0.9,
                         ),
                       ),
-                    ],
-                  ),
-                ],
+                    ),
+                  ],
+                ),
               ),
               const SizedBox(height: 32),
               _buildCampo(
@@ -156,7 +171,7 @@ class _RegistroScreenState extends ConsumerState<RegistroScreen> {
                         ),
                         decoration: BoxDecoration(
                           color: _genero == 'femenino'
-                              ? const Color(0xFFE2619F)
+                              ? const Color(0xFFdb007f).withOpacity(0.7)
                               : Colors.white,
                           borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(8),
@@ -181,7 +196,7 @@ class _RegistroScreenState extends ConsumerState<RegistroScreen> {
                         ),
                         decoration: BoxDecoration(
                           color: _genero == 'masculino'
-                              ? const Color(0xFFE2619F)
+                              ? const Color(0xFFdb007f).withOpacity(0.7)
                               : Colors.white,
                           borderRadius: const BorderRadius.only(
                             topRight: Radius.circular(8),
@@ -287,8 +302,8 @@ class _RegistroScreenState extends ConsumerState<RegistroScreen> {
     return Container(
       height: 52,
       decoration: BoxDecoration(
-        color: const Color(0xFFE2619F),
-        borderRadius: BorderRadius.circular(10),
+        color: const Color(0xFFdb007f).withOpacity(0.5),
+        borderRadius: BorderRadius.circular(12),
       ),
       child: Row(
         children: [
@@ -323,8 +338,8 @@ class _RegistroScreenState extends ConsumerState<RegistroScreen> {
     return Container(
       height: 52,
       decoration: BoxDecoration(
-        color: const Color(0xFFE2619F),
-        borderRadius: BorderRadius.circular(10),
+        color: const Color(0xFFdb007f).withOpacity(0.5),
+        borderRadius: BorderRadius.circular(12),
       ),
       child: Row(
         children: [
