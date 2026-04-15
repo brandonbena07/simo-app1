@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../theme/app_colors.dart';
-import '../widgets/simo_header.dart';
-import '../widgets/simo_bottom_nav.dart';
+import '../../theme/app_colors.dart';
+import '../../widgets/widgetsopciones/simo_header.dart';
+import '../../widgets/widgetsopciones/simo_bottom_nav.dart';
 import 'detalle_solicitud_screen.dart';
 import 'opciones_screen.dart';
 

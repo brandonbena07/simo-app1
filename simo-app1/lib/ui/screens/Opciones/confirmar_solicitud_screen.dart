@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../theme/app_colors.dart';
-import '../widgets/resumen_solicitud_top.dart';
-import '../widgets/simo_bottom_nav.dart';
-import '../widgets/simo_header.dart';
-import '../widgets/simo_button.dart';
+import '../../theme/app_colors.dart';
+import '../../widgets/widgetsopciones/resumen_solicitud_top.dart';
+import '../../widgets/widgetsopciones/simo_bottom_nav.dart';
+import '../../widgets/widgetsopciones/simo_header.dart';
+import '../../widgets/widgetsopciones/simo_button.dart';
 import 'confirmacion_final_screen.dart';
 
 class ConfirmarSolicitudScreen extends StatefulWidget {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../theme/app_colors.dart';
-import '../widgets/simo_header.dart';
-import '../widgets/simo_bottom_nav.dart';
-import '../widgets/dispositivo_icon_card.dart';
+import '../../theme/app_colors.dart';
+import '../../widgets/widgetsopciones/simo_header.dart';
+import '../../widgets/widgetsopciones/simo_bottom_nav.dart';
+import '../../widgets/widgetsopciones/dispositivo_icon_card.dart';
 import 'busqueda_screen.dart';
 import 'detalle_solicitud_screen.dart';
 

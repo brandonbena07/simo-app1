@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
-import '../theme/app_colors.dart';
-import '../widgets/resumen_solicitud_top.dart';
-import '../widgets/simo_bottom_nav.dart';
-import '../widgets/simo_button.dart';
-import '../widgets/simo_header.dart';
+import '../../theme/app_colors.dart';
+import '../../widgets/widgetsopciones/resumen_solicitud_top.dart';
+import '../../widgets/widgetsopciones/simo_bottom_nav.dart';
+import '../../widgets/widgetsopciones/simo_button.dart';
+import '../../widgets/widgetsopciones/simo_header.dart';
 import 'confirmar_solicitud_screen.dart';
 import 'opciones_screen.dart';
 
