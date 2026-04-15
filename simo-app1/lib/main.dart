@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'injection_container.dart' as di;
-import 'package:simo_app/ui/screens/login/splash_screen.dart';
+import 'package:simo_app/ui/screens/Opciones/opciones_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,7 +22,7 @@ class SimoApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFFD8006B)),
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
+      home: const OpcionesScreen(),
     );
   }
 }
