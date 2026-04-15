@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import '../../domain/entities/detalle_solicitud_entity.dart';
-import '../../domain/entities/notificacion_entity.dart';
+import '../../../domain/entities/detalle_solicitud_entity.dart';
+import '../../../domain/entities/notificacion_entity.dart';
 import '../../providers/detalle_solicitud_notifier.dart';
 
 // ─── Colores SIMÖ ─────────────────────────────────────────────────────────────
