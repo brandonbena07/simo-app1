@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'ui/screens/login_screen.dart';
+import 'ui/screens/notificaciones_screen.dart';
 
 void main() {
   runApp(const SimoApp());
@@ -18,7 +18,9 @@ class SimoApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFFD8006B)),
         useMaterial3: true,
       ),
-      home: LoginScreen(),
+      home: const NotificacionesScreen(),
     );
   }
 }
+
+
