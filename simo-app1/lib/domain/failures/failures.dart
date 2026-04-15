@@ -1,6 +1,3 @@
-// failures.dart
-// Clases de error de la app — siguiendo el patrón de AGENTS.md
-
 abstract class Failure {
   final String message;
   const Failure(this.message);
